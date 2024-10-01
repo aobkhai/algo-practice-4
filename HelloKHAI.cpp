@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <Windows.h>
 #include <math.h>
 #include <stdio.h>
@@ -26,7 +26,7 @@ void static task1()
     double h = 1.6;
     double f = log(3 * x) - h;
     double e = pow(pow(f, 3), 5);
-    cout << "\nРезультат першого завдання: \n\n";
+    cout << "\nР РµР·СѓР»СЊС‚Р°С‚ РїРµСЂС€РѕРіРѕ Р·Р°РІРґР°РЅРЅСЏ: \n\n";
     cout << "x = " << x << endl;
     cout << "h = " << h << endl;
     writeGreenString("f =", f);
@@ -36,23 +36,23 @@ void static task1()
 void static task2()
 {
     double x;
-    cout << "Введіть x: ";
+    cout << "Р’РІРµРґС–С‚СЊ x: ";
     cin >> x;
     double c = 3.7 * sqrt(5.0 - x) * cos(3.5 - x) - pow(pow(5.0 - x, 3.0), 1 / 5.0);
-    cout << "\nРезультат другого завдання: \n\n";
+    cout << "\nР РµР·СѓР»СЊС‚Р°С‚ РґСЂСѓРіРѕРіРѕ Р·Р°РІРґР°РЅРЅСЏ: \n\n";
     writeGreenString("x =", x);
-    writeGreenString("С =", c);
+    writeGreenString("РЎ =", c);
 }
 
 int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    writeRedString(">> Починаємо перше завдання!");
+    writeRedString(">> РџРѕС‡РёРЅР°С”РјРѕ РїРµСЂС€Рµ Р·Р°РІРґР°РЅРЅСЏ!");
     task1();
     cout << endl;
-    writeRedString(">> Переходимо до другого завдання!");
+    writeRedString(">> РџРµСЂРµС…РѕРґРёРјРѕ РґРѕ РґСЂСѓРіРѕРіРѕ Р·Р°РІРґР°РЅРЅСЏ!");
     task2();
     cout << endl;
-    writeRedString(" >> Роботу виконано <<");
+    writeRedString(" >> Р РѕР±РѕС‚Сѓ РІРёРєРѕРЅР°РЅРѕ <<");
 }
